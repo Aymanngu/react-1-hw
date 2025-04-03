@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import { Navbar } from "@/components/ui/Navbar";
-import { Footer } from "@/components/ui/Footer";
+import { Navbar } from "@/components/ui/Navbar";  // Import Navbar
+import { Footer } from "@/components/ui/Footer";  // Import Footer
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,14 +15,12 @@ export const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        {/* TASK - React 1 week 1 */}
-        {/* Import and use the Footer component here */}
-        {/* Footer found in the ui/Footer.js folder */}
+        <Navbar /> {/* Navbar will be displayed on every page */}
+        {children} {/* This renders the content of each page */}
+        <Footer /> {/* Footer will be displayed on every page */}
       </body>
     </html>
   );
-}
+};
 
 export default RootLayout;

@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import styles from './page.module.css';
 
+import Link from 'next/link';
+import styles from './page.module.css';
 
 const HeroSection = () => {
   return (
@@ -25,6 +25,6 @@ export const Home = () => {
       <HeroSection />
     </div>
   );
-}
+};
 
 export default Home;
