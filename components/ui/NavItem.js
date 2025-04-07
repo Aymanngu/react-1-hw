@@ -1,16 +1,15 @@
-// components/ui/NavItem.js
-import Link from 'next/link';
+"use client";
 import classNames from 'classnames';
-import styles from './Navbar.module.css';
+import Link from 'next/link';
 
 const NavItem = ({ title, link, isActive }) => {
   return (
-    <li className={classNames(styles.navbarLinks, { [styles.isLinkActive]: isActive })}>
-      <Link href={link}>
-        <b>01</b> {title}
-      </Link>
+    <li className={classNames("navbarLinks", {
+      "isLinkActive": isActive
+    })}>
+      <Link href={link}><b>{title}</b></Link>
     </li>
   );
-};
+}
 
 export default NavItem;
