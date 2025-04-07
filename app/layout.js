@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import { Navbar } from "@/components/ui/Navbar";  // Import Navbar
-import { Footer } from "@/components/ui/Footer";  // Import Footer
+import { Navbar } from "@/components/ui/Navbar"; 
+import { Footer } from "@/components/ui/Footer";  
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +15,9 @@ export const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar /> {/* Navbar will be displayed on every page */}
-        {children} {/* This renders the content of each page */}
-        <Footer /> {/* Footer will be displayed on every page */}
+        <Navbar /> 
+        {children} 
+        <Footer /> 
       </body>
     </html>
   );

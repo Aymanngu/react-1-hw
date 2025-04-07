@@ -2,9 +2,9 @@
 import classNames from 'classnames';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import NavItem from './NavItem'; 
 
 import styles from './Navbar.module.css';
-import NavItem from './NavItem';
 
 const navbarItems = [
   {
@@ -33,7 +33,6 @@ export const Navbar = () => {
       <nav className={styles.navbar}>
         <div className={styles.navbarBG} />
         <ul className={styles.navbarList}>
-
           {navbarItems.map((item, index) => (
             <NavItem
               key={index}
